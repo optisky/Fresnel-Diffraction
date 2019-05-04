@@ -1,4 +1,9 @@
 function [x, y, U] = SFFT(xi, yi, d, Ui, k)
+    % xi: x-coordinate of the object
+    % yi: y-coordinate of the object
+    % d:  distant of propagation
+    % Ui: optical field the object
+    % k:  wave number
     lam = 2*pi/k;
     Lx = length(xi)*lam*d/(xi(end)-xi(1));
     Ly = length(yi)*lam*d/(yi(end)-yi(1));
